@@ -28,8 +28,12 @@ if __name__ == "__main__":
     engine = Engine(opt)
 
     # Urban
-    mat_dataset = MatDataFromFolder('./data/real', fns=['Urban.mat'])
-    key = 'croppedData'
+    # mat_dataset = MatDataFromFolder('./data/real', fns=['Urban.mat'])
+    # key = 'croppedData'
+
+    # Artificial
+    mat_dataset = MatDataFromFolder('/kaggle/input/hsi-denoising-artificial-dataset-mat-files', fns=['avcup97refcomb_coloredSigmaSImin3Times10Same_datamat3D_small.mat'])
+    key = 'signal_art_noisy3D_small'
 
     saveimgdir = f'./images_result/'
 
