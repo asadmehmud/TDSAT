@@ -32,7 +32,7 @@ if __name__ == "__main__":
     # key = 'croppedData'
 
     # Artificial
-    mat_dataset = MatDataFromFolder('/kaggle/input/hsi-denoising-artificial-dataset-mat-files', fns=['avcup97refcomb_coloredSigmaSImin5Times10Same_datamat3D_small.mat'])
+    mat_dataset = MatDataFromFolder('/kaggle/input/hsi-denoising-artificial-dataset-mat-files', fns=['avcup97refcomb_coloredSigmaSImin5Times100Same_datamat3D_small.mat'])
     key = 'signal_art_noisy3D_small'
 
     saveimgdir = f'./images_result/'
