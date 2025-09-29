@@ -33,7 +33,7 @@ if __name__ == "__main__":
 
     # Artificial
     #mat_dataset = MatDataFromFolder('/kaggle/input/hsi-denoising-artificial-dataset-mat-files', fns=['avcup97refcomb_coloredSigmaSImin5Times100Same_datamat3D_small.mat'])
-    mat_dataset = MatDataFromFolder('/content/drive/MyDrive/Colab/HSI/Denoising/Data/artificial/', fns=['avcup97refcomb_smaller_coloredSigmaSImin3Times1Same_datamat3D.mat'])
+    mat_dataset = MatDataFromFolder('/content/drive/MyDrive/Colab/HSI/Denoising/Data/artificial/', fns=['avcup97refcomb_smaller_coloredSigmaSImin3Times10Same_datamat3D.mat'])
     
     key = 'signal_art_noisy3D'
 
