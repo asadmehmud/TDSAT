@@ -32,10 +32,12 @@ if __name__ == "__main__":
     # key = 'croppedData'
 
     # Artificial
-    mat_dataset = MatDataFromFolder('/kaggle/input/hsi-denoising-artificial-dataset-mat-files', fns=['avcup97refcomb_coloredSigmaSImin5Times100Same_datamat3D_small.mat'])
-    key = 'signal_art_noisy3D_small'
+    #mat_dataset = MatDataFromFolder('/kaggle/input/hsi-denoising-artificial-dataset-mat-files', fns=['avcup97refcomb_coloredSigmaSImin5Times100Same_datamat3D_small.mat'])
+    mat_dataset = MatDataFromFolder('/content/drive/MyDrive/Colab/HSI/Denoising/Data/artificial/', fns=['avcup97refcomb_smaller_coloredSigmaSImin3Times1Same_datamat3D.mat'])
+    
+    key = 'signal_art_noisy3D'
 
-    saveimgdir = f'./images_result/'
+    saveimgdir = f'./'
 
     if not engine.get_net().use_2dconv:
         mat_transform = Compose([
